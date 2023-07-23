@@ -1,0 +1,182 @@
+*{
+    /* background-color: #faf3f3; */
+    /* background-color: pink; */
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+
+.status-icon img{
+    width: 30px;
+   margin: 0 2px auto ;    
+}
+
+.parent-container{
+    margin: 0 25% auto;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.time{
+    font-size: 3rem;
+    font-family: Inter;
+    font-weight:200;
+}
+
+.status-bar{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-plan {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 33%;
+}
+.review-plan p {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.progress-bar{
+    padding-top: 40px;
+}
+.progress-bar img{
+    width: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-review{
+    padding: 2%;
+    margin-top: 10%;
+}
+
+h2{
+    font-family: "PT Serif";
+}
+
+p{
+    font-family: "Roboto";
+    width: 80%;
+}
+
+.plan-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.plan h3{
+    /* width: 30%; */
+    width: 100%;
+    padding-left: 10px;
+    font-family: 'Roboto';
+}
+.services h3{
+    width: 100%;
+    padding-right: 30px;
+    color: green;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+hr{
+    margin-bottom: 25px;
+}
+
+.food-body{
+    display: flex;
+    font-family: "Roboto";
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #a7d5be;
+}
+
+.laundry-body{
+    display: flex;
+    font-family: "Roboto";
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #c2e6e7;
+    margin-top: 25px;
+}
+
+.cleaning-body{
+    display: flex;
+    font-family: "Roboto";
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(249, 232, 213);
+    margin-top: 25px;
+}
+
+.beauty-body{
+    display: flex;
+    font-family: "Roboto";
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(246, 236, 238);
+    margin-top: 25px;
+}
+
+.food{
+     display: flex;
+     padding: 12px;
+     align-items: center;
+     margin-bottom: 10px;
+}
+.food h4{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #0F241B;
+}    
+
+.expand{
+    margin-left: 400px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+.expand p{
+    margin-top: 38px;
+    width: 100%;
+    color: #4B6358;
+
+}
+
+.expand select{
+   margin-left: 10px;
+    margin-bottom: -1rem;
+    border: none; 
+}        
+
+
+#price{
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 25px;
+    color: #4B6358;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+        .parent-container{
+            margin: 0 2% auto;
+        }
+}
+
+
+
