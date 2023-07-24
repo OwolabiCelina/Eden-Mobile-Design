@@ -40,19 +40,23 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script>  
-        document.getElementsByClassName("confetti-btn")[0].addEventListener("click", ()=>{
-            confetti()
-            let canvas = document.createElement("canvas");
-            canvas.width = 600;
-            canvas.height = 600;
-            let container = document.getElementsByClassName("description")[0];
-            container.appendChild("canvas");
-
-            let confetti_btn = confetti.create(canvas);
-            confetti_btn().then(() => container.removeChild(canvas))
-        })
-    </script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          setInterval(showConfetti, 5000);
+        });
+    
+        function showConfetti() {
+          confetti();
+          let canvas = document.createElement("canvas");
+          canvas.width = 600;
+          canvas.height = 600;
+          let container = document.getElementsByClassName("description")[0];
+          container.appendChild(canvas);
+    
+          let confetti_btn = confetti.create(canvas);
+          confetti_btn().then(() => container.removeChild(canvas));
+        }
+      </script>
+    
 </body>
 </html>

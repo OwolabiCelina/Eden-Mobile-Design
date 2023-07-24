@@ -1,5 +1,5 @@
 .container{
-    margin: 0 25% auto;
+    margin: 0 5% auto;
     background-color: #fffafa;
     box-sizing: border-box;
     padding-top: 1%;
@@ -62,7 +62,6 @@
     .container{
         margin: 0 2% auto;
     }
-
     .status-bar{
         display: flex;
         align-items: center;

@@ -1,5 +1,5 @@
 .home-container{
-    margin: 0 25% auto;
+    margin: 0 5% auto;
     background-color: #fffafa;
     box-sizing: border-box;
     padding-top: 1%;
@@ -26,30 +26,330 @@
 }
 .home-text{
     display: flex;
-    justify-content: space-between;
     margin-top: 3%;
 }
 .home-text p{
-    text-align: left;
-    margin-right: 65%;
     font-family: "PT Serif";
     font-weight: 600;
     font-size: 20px;
+    flex-grow: 1;
+    padding-left: 2%;
 }
-.girl-img{
-    width: 30px;
+#girl-img{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+#girl-img img{
+    border-radius: 50%;
 }
 .home-btn{
     display: flex;
-    justify-content: space-around;
-    border-radius: 70px;
-    border: 1px solid black;
-    /* width: 100%; */
-    /* padding: 3%; */
-    text-align: center;
-    margin-top: 8px;
-    /* align-items: center; */
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #F0F4F2;
+    align-items: center;
+    font-family: "Roboto";
+    margin-top: 3%;
+    border: none;
 }
-#btn-container{
-    display: inline;
+.home-button {
+    border-radius: 10px;
+    background-color: white;
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+    justify-content: end;
+    font-weight: 600;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.upcoming{
+    padding-right: 7%;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.tap-btn{
+    border-radius: 10px;
+    border: 5px solid rgb(145, 238, 185);
+    background-color: #03A84E;
+    margin-top: 4%;
+    color: #fff;
+    padding-left: 3%;
+    margin-bottom: 25px;
+    font-family: "Roboto";
+}
+.tap-btn h5{
+    font-weight: 500;
+    font-size: 25px;
+}
+.tap-btn p{
+    width: 40%;
+    font-size: 15px;
+}
+.girl-img{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+.girl-img img{
+    width: 10%;
+    height: 10%;
+}
+.food-delivery-sec{
+    border: 1px solid #6ECE8A;
+    border-radius: 10px;
+    background-color: #BDEECD;
+}
+.food-delivery{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    font-family: "Roboto";
+}
+.food-delivery > div{
+    display: flex;
+    color: #03A84E;
+    font-size: 20px;
+}
+.food-delivery > div img{
+    margin-left: 10px;
+}
+.food-status{
+    font-weight: 500;
+}
+.view-status{
+    border-radius: 30px;
+    background-color: #E9FBF2;
+    width: 20%;
+    justify-content: center;
+    cursor: pointer;
+}
+.bbq{
+    display: flex;
+    padding: 2% 3%;
+    font-family: "Roboto";
+    
+}
+.bbq p{
+    margin-left: 40px;
+    color: #4B6358;
+}
+.bbq img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.bbq .fries{
+    font-weight: 600;
+    color: #0F241B;
+}
+hr{
+    width: 90%;
+}
+.time-container{
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 1% 3%;
+    font-family: "Roboto";
+}
+.time-container img{
+    width: 20px;
+    height: 20px;
+}
+.time-container span{
+    margin-left: 5%;
+}
+.house-pampering-text{
+    color: #000000;
+    font-family: "Roboto";
+    padding-left: 3%;
+    width: 50%;
+    font-weight: 400;
+}
+.home-cleaning-sec{
+    border: 1px solid #FF9D00;
+    border-radius: 10px;
+    background-color: #FFDA9F;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+}
+.view-house-status{
+    border-radius: 30px;
+    background-color: #FFF3DF;
+    width: 20%;
+    justify-content: center;
+    cursor: pointer;
+}
+.house-time-container{
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 1% 3%;
+    font-family: "Roboto";
+}
+.get-ready-text hr{
+    margin-bottom: 20px;
+}
+.house-sanitation-txt{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    font-family: "Roboto";
+}
+.house-sanitation-txt > div{
+    display: flex;
+    color: #FF9D00;
+    font-size: 20px;
+}
+.house-sanitation-txt > div img{
+    margin-left: 10px;
+}
+.house-time-container{
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 1% 3%;
+    font-family: "Roboto";
+}
+.house-time-container span{
+    margin-left: 5%;
+}
+.house-pampering-text .line{
+    width: 90%;
+}
+.windows{
+    display: flex;
+    justify-content: space-between;
+}
+.windows > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.windows > div img{
+    width: 20px;
+    height: 20px;
+}
+.windows > div p{
+    color: #8AA398;
+    font-family: "Roboto";
+}
+.windows .home-icon{
+    color: #03A84E;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 450px){
+    .view-house-status p{
+        font-size: 9px; 
+        text-align: center;
+        justify-content: center;
+    }
+    .view-status > div{
+        font-size: 10px;
+        width: 30%;
+    }
+    .food-status > div{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .home-container{
+        margin: 0 2% auto;
+    }
+    .status-bar{
+        display: flex;
+        align-items: center;
+    }
+    .time{
+        font-size: 2rem;
+        font-weight:200;
+    }
+    .tap-btn h5{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .tap-btn p{
+        width: 40%;
+        font-size: 15px;
+    }
+    .food-delivery > div{
+        font-size: 12px;
+        text-align: center;
+    }
+    .food-delivery > div img{
+        margin-left: 5px;
+    }
+    .home-text p{
+        font-family: "PT Serif";
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .home-button {
+        width: 40%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .upcoming{
+        font-size: 15px;
+    }
+    #girl-img{
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    #girl-img img{
+        border-radius: 30%;
+    }
+    .bbq{
+        padding: 1% 2%;
+    }
+    .bbq .fries{
+        font-weight: 500;
+    }
+    .time-container{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 1% 3%;
+    }
+    .house-sanitation-txt{
+        padding: 1% 2%;
+    }
+    .house-sanitation-txt > div{
+        font-size: 15px;
+        align-items: center;
+    }
+    .house-sanitation-txt > div img{
+        margin-left: 5px;
+    }
+    .view-house-status p{
+        font-size: 10px; 
+        text-align: center;
+        justify-content: center;
+    }
+    .house-pampering-text{
+        width: 40%;
+        font-weight: 400;
+    }
+    .house-time-container{
+        font-size: 15px;
+        padding: 1% 2%;
+    }
+    .windows > div img{
+        width: 15px;
+        height: 15px;
+    }
+    .windows .home-icon{
+        font-weight: 400;
+    }
 }
