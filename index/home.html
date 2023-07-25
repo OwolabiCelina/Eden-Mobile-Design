@@ -111,6 +111,80 @@
             <p>Gardener</p>
         </div>
     </div>
+        <!-- <div class="home-indicator">
+            <img src="../project-assets/svg/Home Indicator.svg" alt="">
+        </div> -->
     </div>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="delivery-dt">
+                <p>Mon, 08 Sep 2021</p>
+                <img src="../project-assets/svg/Remove-Cancel.svg" alt="">
+            </div>
+            <div class="order-img">
+                <div id="food-img"><img src="../project-assets/svg/image 3.svg" alt=""></div>
+                <div>
+                    <p id="status">Order status</p>
+                    <p class="order-arrived">Order has arrived</p>
+                </div>
+            </div>
+            <div class="delivery-add">
+                <h5>Delivery address</h5>
+                <p>No 6B, Radiator Spring, Lightning Estate, Lagos, Nigeria.</p>
+            </div>
+            <div class="order-time">
+               <div id="timer">
+                    <img src="../project-assets/svg/green-circle.svg" alt="">
+                    <p id="txt">Order has arrived</p>
+               </div>
+                <p class="p-timer">10:56 AM</p>
+            </div>
+            <div class="order-delivered">
+                <p>Your order has arrived at your location. Pick it up!</p>
+            </div>
+            <div class="order-time">
+                <div id="timer"><img src="../project-assets/svg/pass.svg" alt="">
+                    <p id="txt">Order on the way</p>
+                </div>
+                    <p class="p-timer">9:14 AM</p>
+            </div>
+            <div class="order-delivered">
+                <p>Your order has been dispatched and is on the way to you.</p>
+            </div>
+
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const viewStatusBtn = document.querySelector(".view-status");
+            const modal = document.querySelector(".modal");
+            const closeModalBtn = document.querySelector(".close-modal-btn");
+
+            viewStatusBtn.addEventListener("click", () => {
+                modal.style.display = "block";
+            });
+
+            closeModalBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const viewStatusBtn = document.querySelector(".view-house-status");
+            const modal = document.querySelector(".modal");
+            const closeModalBtn = document.querySelector(".close-modal-btn");
+
+            viewStatusBtn.addEventListener("click", () => {
+                modal.style.display = "block";
+            });
+
+            closeModalBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+        });
+    </script>
 </body>
 </html>

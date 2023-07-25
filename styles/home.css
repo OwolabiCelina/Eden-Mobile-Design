@@ -3,7 +3,7 @@
     background-color: #fffafa;
     box-sizing: border-box;
     padding-top: 1%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .status-bar{
     margin-top: 2rem;
@@ -248,7 +248,120 @@ hr{
     color: #03A84E;
     font-weight: 500;
 }
-
+/* .home-indicator img{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 20rem;
+    margin-top: 20px;
+} */
+.modal{
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 999;
+}
+.modal-content{
+    width: 80%;
+    height: 90%;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.delivery-dt{
+    display: flex;
+    justify-content: space-between;
+    color: #4B6358;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+}
+.order-img{
+    display: flex;
+    width: 40%;
+    font-size: 1rem;
+    font-family: "Roboto";
+}
+#food-img{
+    width: 15%;
+}
+.order-img img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.order-img p{
+    margin: 0;
+    margin-left: 40px;
+    color: #4B6358;
+}
+.order-arrived{
+    color: #0F241B;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.delivery-add{
+    width: 50%;
+    font-family: "Roboto";
+    border: 1px solid #4B6358;
+    border-style: dashed;
+    margin-top: 10px;
+    padding: 1% 1%;
+    width: 35%;
+}
+.delivery-add h5{
+    color: #4B6358;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.delivery-add p{
+    color: #0F241B;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.order-time{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order-time .p-timer{
+    text-align: right;
+    /* align-items: flex-end; */
+}
+#txt{
+    margin-left: 20px;
+    font-weight: 600;
+    color: #0F241B;
+    font-size: 1.1rem;
+}
+#timer{
+    display: flex;
+}
+.order-delivered{
+    width: 35%;
+    color: #4B6358;
+    font-size: 1.1rem;
+    border: 1px solid #8AA398;
+    border-style: dashed;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+.order-delivered p{
+    margin-left: 20px;
+}
+.delivered{
+    display: flex;
+}
 @media screen and (max-width: 450px){
     .view-house-status p{
         font-size: 9px; 
@@ -263,7 +376,6 @@ hr{
         font-size: 10px;
     }
 }
-
 @media screen and (max-width: 745px) {
     .home-container{
         margin: 0 2% auto;
@@ -352,4 +464,61 @@ hr{
     .windows .home-icon{
         font-weight: 400;
     }
-}
+    .home-indicator img{
+        width: 20%;
+        margin-left: 10rem;
+        margin-top: 10px;
+    }
+
+    .modal{
+        width: 80%; 
+        height: 100%; 
+    }
+    .modal-content{
+        width: 80%;
+        height: 100%;
+        margin: 0;
+    }
+    #food-img{
+        width: 15%;
+    }
+    .order-img p{
+        margin-left: 10px;
+    }
+    .order-img #status{
+        font-size: 1rem;
+    }
+    .order-arrived{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .delivery-add{
+        width: 45%;
+    }
+    .delivery-add h5{
+        color: #4B6358;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .delivery-add p{
+        color: #0F241B;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #txt{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .p-timer{
+        font-size: 1.0rem;
+    }
+    .order-delivered{
+        width: 40%;
+        font-size: 1rem;
+        border-style: dashed;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    }
