@@ -118,6 +118,9 @@
 .food-delivery > div img{
     margin-left: 10px;
 }
+.food-delivery p{
+    font-size: 20px;
+}
 .food-status{
     font-weight: 500;
 }
@@ -251,14 +254,6 @@ hr{
     color: #03A84E;
     font-weight: 500;
 }
-/* .home-indicator img{
-    width: 50%;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    margin-left: 20rem;
-    margin-top: 20px;
-} */
 .modal, .modalTwo{
     display: none; 
     position: fixed; 
@@ -270,8 +265,8 @@ hr{
     z-index: 999;
 }
 .modal-content{
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 80%;
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -286,7 +281,7 @@ hr{
     justify-content: space-between;
     color: #4B6358;
     font-family: "Roboto";
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .order-img{
     display: flex;
@@ -310,35 +305,33 @@ hr{
 .order-arrived{
     color: #0F241B;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.0rem;
 }
 .delivery-add{
     width: 50%;
     font-family: "Roboto";
     border: 1px solid #4B6358;
     border-style: dashed;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 1% 1%;
     width: 35%;
 }
 .delivery-add h5{
     color: #4B6358;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: normal;
 }
 .delivery-add p{
     color: #0F241B;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .order-time{
     display: flex;
-    width: 100%;
     justify-content: space-between;
 }
 .order-time .p-timer{
     text-align: right;
-    /* align-items: flex-end; */
 }
 #txt{
     margin-left: 20px;
@@ -350,7 +343,7 @@ hr{
     display: flex;
 }
 .order-delivered{
-    width: 35%;
+    width: 38%;
     color: #4B6358;
     font-size: 1.1rem;
     border: 1px solid #8AA398;
@@ -387,17 +380,17 @@ hr{
         display: flex;
         align-items: center;
     }
-    .time{
-        font-size: 2rem;
+    #timer{
+        font-size: rem;
         font-weight:200;
     }
     .tap-btn h5{
-        font-weight: 300;
-        font-size: 15px;
+        font-weight: 400;
+        font-size: 14px;
     }
     .tap-btn p{
         width: 40%;
-        font-size: 15px;
+        font-size: 12px;
     }
     .food-delivery > div{
         font-size: 12px;
@@ -409,15 +402,15 @@ hr{
     .home-text p{
         font-family: "PT Serif";
         font-weight: 600;
-        font-size: 15px;
+        font-size: 13px;
     }
     .home-button {
         width: 40%;
         text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
     .upcoming{
-        font-size: 15px;
+        font-size: 13px;
     }
     #girl-img{
         flex-grow: 1;
@@ -431,9 +424,10 @@ hr{
     }
     .bbq .fries{
         font-weight: 500;
+        font-size: 12px;
     }
     .time-container{
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 300;
         padding: 1% 3%;
     }
@@ -441,7 +435,7 @@ hr{
         padding: 1% 2%;
     }
     .house-sanitation-txt > div{
-        font-size: 15px;
+        font-size: 10px;
         align-items: center;
     }
     .house-sanitation-txt > div img{
@@ -449,20 +443,31 @@ hr{
     }
     .view-house-status p{
         font-size: 10px; 
-        text-align: center;
+        /* text-align: center; */
         justify-content: center;
+    }
+    .food-delivery p{
+        font-size: 10px;
+        align-items: center;
     }
     .house-pampering-text{
         width: 40%;
         font-weight: 400;
     }
+    .house-pampering-text p{
+        font-size: 12px;
+    }
     .house-time-container{
-        font-size: 15px;
+        font-size: 12px;
         padding: 1% 2%;
     }
     .windows > div img{
         width: 15px;
         height: 15px;
+        /* font-size: 12px; */
+    }
+    .windows p{
+        font-size: 13px;
     }
     .windows .home-icon{
         font-weight: 400;
@@ -472,18 +477,10 @@ hr{
         margin-left: 10rem;
         margin-top: 10px;
     }
-
-    .modal{
-        width: 80%; 
-        height: 100%; 
-    }
     .modal-content{
         width: 80%;
-        height: 100%;
+        height: 95%;
         margin: 0;
-    }
-    #food-img{
-        width: 15%;
     }
     .order-img p{
         margin-left: 10px;
@@ -492,7 +489,7 @@ hr{
         font-size: 1rem;
     }
     .order-arrived{
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1rem;
     }
     .delivery-add{
@@ -506,7 +503,7 @@ hr{
     .delivery-add p{
         color: #0F241B;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 400;
     }
     #txt{
         font-weight: 500;
@@ -516,7 +513,7 @@ hr{
         font-size: 1.0rem;
     }
     .order-delivered{
-        width: 40%;
+        /* width: 40%; */
         font-size: 1rem;
         border-style: dashed;
         border-right: none;
