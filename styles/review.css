@@ -12,7 +12,6 @@
 
 .parent-container{
     margin: 0 5% auto;
-    border: 1px solid red;
     box-sizing: border-box;
     padding: 0;
 }
@@ -310,7 +309,10 @@ input{
             font-size: 18px;
         }
         .plan-review{
-            text-align: center;
+            text-align: left;
+        }
+        .plan-review h2{
+            text-align: left;
         }
         .plan-review p{
             font-family: "Roboto";
